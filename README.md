@@ -3,6 +3,10 @@
 ## Overview
 This is a single-page Quiz application designed to test your knowledge with 10 carefully curated questions. Each question offers 4 multiple-choice options, allowing users to select their answers and receive immediate feedback.
 
+## Live Demo
+[View the Quiz App Live](https://codecraftedyash.github.io/Simple-Quiz-/)
+
+
 ## Features
 - **10 Diverse Questions:** Covers various topics to challenge your understanding.
 - **Multiple-Choice Options:** Each question has 4 selectable answers.
