@@ -214,7 +214,7 @@ function nextFn(){
     currentIndex++;
     answerContainer.classList.remove("disable");
     nextButton.classList.add("hide");
-    if(currentIndex==3){
+    if(currentIndex==10){
         showResult();
     }
     else{
