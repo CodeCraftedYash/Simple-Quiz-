@@ -150,12 +150,18 @@ let score = 0;
 let currentIndex = 0;
 const nextButton = document.querySelector("#next-btn")
 const result = document.querySelector(".result")
-
+resultTextContent = document.querySelector(".result h1")
+const retryButton = document.querySelector(".retry");
 
 nextButton.addEventListener("click",() => {
     nextFn();
 })
-
+retryButton.addEventListener("click",()=>{
+  score=0;
+  currentIndex=0;
+  result.classList.add("hide");
+  startQuiz();
+})
 
 //Function to start the quiz
 function startQuiz(){
@@ -206,10 +212,9 @@ function removeFn(){
 //Funtion for updation
 function nextFn(){
     currentIndex++;
-   
     answerContainer.classList.remove("disable");
     nextButton.classList.add("hide");
-    if(currentIndex==10){
+    if(currentIndex==3){
         showResult();
     }
     else{
@@ -218,7 +223,7 @@ function nextFn(){
 }
 
 function showResult(){
-    result.textContent = `Your Score is ${score}/10`
+    resultTextContent.textContent = `Your Score is ${score}/10`
     result.classList.remove("hide");
 }
 startQuiz();
